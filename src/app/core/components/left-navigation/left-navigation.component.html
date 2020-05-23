@@ -1,0 +1,11 @@
+<div class="left-nav">
+
+
+    <div class="list-group mt-4">
+      <a *ngFor="let navItem of navItems; let index = index;" (click)="navItemClicked($event, navItem)"
+         class="list-group-item list-group-item-action  list-group-item-light">
+          {{navItem.title}}
+      </a>
+    </div>
+
+</div>
